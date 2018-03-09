@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<link rel='stylesheet' type='text/css' href='turtle.css' />
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	</head>
+	<body>
+		<div class='contents'>
+			<div class='inputs'>
+				<div class='slide-control'>
+					<h3 class='slide-control-element' >Iterations</h3>
+					<input type='range' min='1' max='1000' value='200' class='slide-control-element slider' id='iterations-slider'></input>
+					<p class='slide-control-element' id='iterations-slider-value'></p>
+				</div>
+				<div class='slide-control'>
+					<h3 class='slide-control-element'>Angle (degrees)</h3>
+					<input type='range' min='0' max='359' value='121' class='slide-control-element slider' id='angle-slider'></input>
+					<p class='slide-control-element' id='angle-slider-value'></p>
+				</div>
+				<div class='slide-control'>
+					<h3 class='slide-control-element'>Base segment length</h3>
+					<input type='range' min='0' max='100' value='0' class='slide-control-element slider' id='segment-base-length-slider'></input>
+					<p class='slide-control-element' id='segment-base-length-slider-value'></p>
+				</div>
+				<div class='slide-control'>
+					<h3 class='slide-control-element'>Segment length increment</h3>
+					<input type='range' min='0' max='10' step='0.1' value='2' class='slide-control-element slider' id='segment-length-increment-slider'></input>
+					<p class='slide-control-element' id='segment-length-increment-slider-value'></p>
+				</div>
+				<div class='slide-control'>
+					<h3 class='slide-control-element'>Line width</h3>
+					<input type='range' min='1' max='10' value='1' class='slide-control-element slider' id='line-width-slider'></input>
+					<p class='slide-control-element' id='line-width-slider-value'></p>
+				</div>
+				<div class='slide-control'>
+					<h3 class='slide-control-element'>Line Color (R)</h3>
+					<input type='range' min='0' max='255' value='60' class='slide-control-element slider' id='line-color-r-slider'></input>
+					<p class='slide-control-element' id='line-color-r-slider-value'></p>
+				</div>
+				<div class='slide-control'>
+					<h3 class='slide-control-element'>Line Color (G)</h3>
+					<input type='range' min='0' max='255' value='60' class='slide-control-element slider' id='line-color-g-slider'></input>
+					<p class='slide-control-element' id='line-color-g-slider-value'></p>
+				</div>
+				<div class='slide-control'>
+					<h3 class='slide-control-element'>Line Color (B)</h3>
+					<input type='range' min='0' max='255' value='60' class='slide-control-element slider' id='line-color-b-slider'></input>
+					<p class='slide-control-element' id='line-color-b-slider-value'></p>
+				</div>
+				<div class='slide-control'>
+					<h3 class='slide-control-element'>Line Color (A)</h3>
+					<input type='range' min='0' max='1' value='0.5' step='0.01' class='slide-control-element  slider' id='line-color-a-slider' orient="vertical"></input>
+					<p class='slide-control-element' id='line-color-a-slider-value'></p>
+				</div>
+				<div class='slide-control'>
+					<h3 class='slide-control-element'>Background Color (R)</h3>
+					<input type='range' min='0' max='255' value='255' class='slide-control-element slider' id='bg-color-r-slider'></input>
+					<p class='slide-control-element' id='bg-color-r-slider-value'></p>
+				</div>
+				<div class='slide-control'>
+					<h3 class='slide-control-element'>Background Color (G)</h3>
+					<input type='range' min='0' max='255' value='255' class='slide-control-element slider' id='bg-color-g-slider'></input>
+					<p class='slide-control-element' id='bg-color-g-slider-value'></p>
+				</div>
+				<div class='slide-control'>
+					<h3 class='slide-control-element'>Background Color (B)</h3>
+					<input type='range' min='0' max='255' value='255' class='slide-control-element slider' id='bg-color-b-slider'></input>
+					<p class='slide-control-element' id='bg-color-b-slider-value'></p>
+				</div>
+				<div class='slide-control'>
+					<h3 class='slide-control-element'>Background Color (A)</h3>
+					<input type='range' min='0' max='1' value='1' step='0.01' class='slide-control-element  slider' id='bg-color-a-slider' orient="vertical"></input>
+					<p class='slide-control-element' id='bg-color-a-slider-value'></p>
+				</div>
+			</div>
+			<canvas class='myCanvas'>
+			</canvas>
+		</div>
+		<script type='text/javascript' src='turtle.js'></script>
+	</body>
+</html>
